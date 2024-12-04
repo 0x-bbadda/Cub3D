@@ -6,7 +6,7 @@
 /*   By: bbadda <bbadda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 17:45:25 by bbadda            #+#    #+#             */
-/*   Updated: 2024/12/03 13:59:48 by bbadda           ###   ########.fr       */
+/*   Updated: 2024/12/04 12:07:59 by bbadda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,8 @@ bool        wall(t_mlx *mlx, float px, float py);
 void        __create_window(t_mlx *mlx);
 void        player_position(t_mlx *mlx);
 void		get_cordinante(t_mlx *mlx, t_cord *cord);
+//--------------------player_move_functions-------------------------------//
+void        player_move(mlx_key_data_t data, void *param);
 
 void    print(t_mlx *mlx);
 
