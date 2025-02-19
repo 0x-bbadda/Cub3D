@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bbadda <bbadda@student.42.fr>              +#+  +:+       +#+        */
+/*   By: med-dahr <med-dahr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 17:45:25 by bbadda            #+#    #+#             */
-/*   Updated: 2024/12/03 13:59:48 by bbadda           ###   ########.fr       */
+/*   Updated: 2025/02/19 22:52:52 by med-dahr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 # include <math.h>
 
 # define PI 3.1415926535897
-# define size 40
+# define size 20
 # define BUFFER_SIZE 42
 # define WIDTH 1900
 # define HEIGHT 1000
@@ -35,6 +35,8 @@
 # define MLX_KEY_A 65
 # define MLX_KEY_R_RIGHT 263
 # define MLX_KEY_R_LEFT 262
+# define VERTECAL 10
+# define HOREZONTAL 12
 
 int			get_colors(char *str);
 size_t		my_strlen(const char *str);

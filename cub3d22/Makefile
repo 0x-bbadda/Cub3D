@@ -1,6 +1,6 @@
 NAME= cub3d
 
-CFLAGS=  -Wall -Wextra -Werror -fsanitize=address -g
+CFLAGS=  -Wall -Wextra -Werror #-fsanitize=address -g
 
 LIB = MLX/build/libglfw3.a MLX/build/libmlx42.a  -framework Cocoa -framework OpenGL -framework IOKit
 

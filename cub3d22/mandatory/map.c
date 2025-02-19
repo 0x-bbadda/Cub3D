@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   map.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bbadda <bbadda@student.42.fr>              +#+  +:+       +#+        */
+/*   By: med-dahr <med-dahr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 17:51:12 by bbadda            #+#    #+#             */
-/*   Updated: 2024/11/26 12:11:40 by bbadda           ###   ########.fr       */
+/*   Updated: 2025/02/19 10:34:29 by med-dahr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ static void	__allocate_for_me(t_mlx *mlx)
 static void	__textures(t_mlx *mlx, char *line, int *t)
 {
 	mlx->map.textures[(*t)++] = get_part(line, 0);
+	// printf("%s\n", mlx->map.textures[*t - 1]);
 }
 
 static void	__colors(t_mlx *mlx, char *line, int *c)
@@ -68,7 +69,7 @@ void	read_and_fill_map(char *str, t_mlx *mlx)
 	{
 		if (!cmp(get_part(line, 1), "NO") || !cmp(get_part(line, 1), "SO")
 			|| !cmp(get_part(line, 1), "WE") || !cmp(get_part(line, 1), "EA"))
-			__textures(mlx, line, &t);
+				__textures(mlx, line, &t);
 		else if (!cmp(get_part(line, 1), "F") || !cmp(get_part(line, 1), "C"))
 			__colors(mlx, line, &c);
 		else if (line[0] == '1' && ++i < mlx->map.col)
